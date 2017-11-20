@@ -1,0 +1,8 @@
+1.pop显示到某个View的具体位置
+
+int location[] = new int[2];
+ll_like_and_comment.getLocationOnScreen(location);
+mPopupWindow.getContentView().measure(0, 0); // 不需要考虑父控件的布局问题，直接使用getMeasuredWidth和getMeasuredHeight获取此view的自身的实际大小
+int xOff = location[0] - mPopupWindow.getContentView().getMeasuredWidth() + 20;
+int yOff = location[1];
+mPopupWindow.showAtLocation(ll_like_and_comment, Gravity.NO_GRAVITY, xOff, yOff);

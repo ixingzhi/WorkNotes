@@ -1,0 +1,4 @@
+stroke   描边处理  width 宽度   color 颜色
+padding  内部到边框的距离
+solid    填充颜色
+corners  边角处理  radius 圆角

@@ -1,0 +1,49 @@
+1、克隆仓库        git clone "SSH"
+
+2、添加到本地仓库        git add "文件名"
+
+3、提交        git commit -m "描述"
+
+4、将本地主分支推到远程主分支     git push origin master
+
+5、本地仓库添加到服务器 git remote add origin git@github.com:migit账户名/learngit.git
+
+
+
+################ 分支相关  ####################
+
+1、创建一个分支  git branch "分支名"
+
+2、切换到某个分支   git checkout "分支名"            主分支 master
+
+3、创建分支并切换分支    git checkout -b dev
+
+4、查看当前所有分支(当前分支前面会有一个*号)     git branch
+
+5、将某个分支上合并到当前分支  git merge "分支名"
+
+6、删除某个分支   git branch -d dev
+
+
+
+################ MINGW64 命令 ######################
+1、打开某个目录    cd d:\\abc
+
+2、回退到上个目录   cd ..
+
+3、列出当前目录中的所有文件   ls:list
+
+4、新建文件夹   mkdir 文件夹名
+
+5、删除文件夹   rm -r 文件夹名  (先删除文件里面的文件，从里到外，使用到递归删除)
+
+6、reset 清屏
+
+
+
+
+
+
+
+
+

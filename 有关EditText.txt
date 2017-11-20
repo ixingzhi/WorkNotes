@@ -1,0 +1,9 @@
+1、有EditText控件  进入Activity时弹出软键盘，在点击后获取焦点，解决办法：
+
+	在EditText的父级控件中找一个，设置成
+   	android:focusable="true"  
+  	android:focusableInTouchMode="true"
+
+	这样，就把EditText默认的行为截断了！
+
+2.在Manifest  Activity中加  android:windowSoftInputMode="stateHidden"
