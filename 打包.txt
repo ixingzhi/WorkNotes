@@ -1,1 +1,4 @@
 keytool -list -v -keystore TowerCraneHome.jks
+
+
+Apk重新签名：jarsigner -verbose -keystore 应用Key.jks -signedjar 签名后的名字.apk 未签名时的名字.apk Key别名
