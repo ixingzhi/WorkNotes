@@ -6,7 +6,13 @@
 
 4、将本地主分支推到远程主分支     git push origin master
 
-5、本地仓库添加到服务器 git remote add origin git@github.com:migit账户名/learngit.git
+5、本地仓库添加到服务器 git remote add origin git@github.com:账户名/项目名.git
+
+6、删除远程地址：git remote rm origin
+
+7、撤销暂存区的文件：git reset HEAD file
+
+8、查看远程仓库信息：git remote -v
 
 
 
