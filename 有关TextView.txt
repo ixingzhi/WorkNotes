@@ -1,8 +1,0 @@
-//截取#之前的字符串
-
-String str = "sdfs#d";
-str.substring(0, str.indexOf("#"));
-输出的结果为：sdfs
-
-indexOf返回的索引也是从0开始的，所以indexOf("#") = 4。
-java中的substring的第一个参数的索引是从0开始，而第二个参数是从1开始
