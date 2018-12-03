@@ -6,15 +6,13 @@
 
 4、将本地主分支推到远程主分支     git push origin master
 
-5、本地仓库添加到服务器 git remote add origin git@github.com:账户名/项目名.git
+5、添加远程仓库 git remote add origin "远程url"
 
-6、删除远程地址：git remote rm origin
+6、删除远程仓库：git remote rm origin
 
 7、撤销暂存区的文件：git reset HEAD file
 
 8、查看远程仓库信息：git remote -v
-
-
 
 ################ 分支相关  ####################
 
@@ -30,9 +28,22 @@
 
 6、删除某个分支   git branch -d dev
 
+7、查看远程分支  git branch -r
+
+8、创建远程分支  git push origin "分支名"
+
+9、删除远程分支 git push origin --delete "远程分支名"
+
+################ 提交相关  ####################
+
+1、提交本地分支到远程分支  git push origin "本地分支名"："远程分支名"
+
+2、查看未提交的commit文件 git log "分支名" ^origin/"远程分支名"
+
 
 
 ################ MINGW64 命令 ######################
+
 1、打开某个目录    cd d:\\abc
 
 2、回退到上个目录   cd ..
