@@ -34,11 +34,40 @@
 
 9、删除远程分支 git push origin --delete "远程分支名"
 
+10、查看所有分支(本地和远程) git branch -a
+
 ################ 提交相关  ####################
 
 1、提交本地分支到远程分支  git push origin "本地分支名"："远程分支名"
 
 2、查看未提交的commit文件 git log "分支名" ^origin/"远程分支名"
+
+3、合并多个commit，已经push； git rebase -i HEAD~2 -> 修改 —> 保存  -> git rebase --continue 
+   -> git push -f -> git rebase origin/master
+
+  中止：git rebase --abort
+
+################ 修复相关  ####################
+
+1、恢复 git reset --hard  -->  git reflog  git reset --hard "xx"
+
+2、未push之前，撤销commit区提交  git reset --soft "上一个log编号 xx"
+
+################ 编辑相关  ####################
+
+Esc 退出编辑模式，输入以下命令：
+
+:wq  保存后退出vi，若为 :wq! 则为强制储存后退出（常用）
+
+:w    保存但不退出（常用）
+
+:w!   若文件属性为『只读』时，强制写入该档案
+
+:q    离开 vi （常用）
+
+:q!   若曾修改过档案，又不想储存，使用 ! 为强制离开不储存档案。
+
+:e!   将档案还原到最原始的状态！
 
 
 
@@ -55,6 +84,8 @@
 5、删除文件夹   rm -r 文件夹名  (先删除文件里面的文件，从里到外，使用到递归删除)
 
 6、reset 清屏
+
+7、回到根目录 cd /
 
 
 
