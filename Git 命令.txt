@@ -14,6 +14,9 @@
 
 8、查看远程仓库信息：git remote -v
 
+9、git pull origin master  (菱形合并)
+   git pull --rebase origin master  （线性合并）
+
 ################ 分支相关  ####################
 
 1、创建一个分支  git branch "分支名"
@@ -36,6 +39,8 @@
 
 10、查看所有分支(本地和远程) git branch -a
 
+11、git remote prune origin 删除本地不存在的远程分支
+
 ################ 提交相关  ####################
 
 1、提交本地分支到远程分支  git push origin "本地分支名"："远程分支名"
@@ -46,6 +51,15 @@
    -> git push -f -> git rebase origin/master
 
   中止：git rebase --abort
+
+4、push到远程分支：add,commit 至本地仓库 -> 切换到master -> git pull --rebase ->切换到分支 -> 
+		git rebase master -> git push
+
+5、回退push	git add .  ->  git fetch  ->  git rebase origin/master  ->  git stash ->
+	git rebase origin/master ->  git stash apply  ->  git add . -> git commit -m "" ->
+	git push -f;
+
+6、恢复到某一个状态：git reflog    ->   git reset xxx
 
 ################ 修复相关  ####################
 
@@ -88,7 +102,9 @@ Esc 退出编辑模式，输入以下命令：
 7、回到根目录 cd /
 
 
+################ Fiddler 命令 ######################
 
+1、启动   mono --arch=32 Fiddler.exe
 
 
 
